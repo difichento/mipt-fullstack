@@ -29,7 +29,6 @@ export function LiveToQueryAndAnimate() {
     /* animation */
     btn.classList.toggle('live-button-enable')
     btn_circle.classList.toggle('live-button-circle-enable')
-    alert("eqwdsjdnsajcnsjnj")
 }
 
 
@@ -50,7 +49,7 @@ export function sendLogin(username, password) {
         .then(response => {
             homeRedirectAction()
             setTimeout(() => {
-                alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+                window.alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
             },
                 2000)
         })
@@ -76,7 +75,7 @@ export function sendReg(email, password, username) {
         .then(response => {
             homeRedirectAction()
             setTimeout(() => {
-                alert("Successfully registered: " + email + " + " + password + " + " + username
+                window.alert("Successfully registered: " + email + " + " + password + " + " + username
                     + "\nResponse: " + JSON.stringify(response))
             },
                 2000

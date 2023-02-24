@@ -39,8 +39,6 @@ export function sendLogin(username, password) {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "*",
             },
             "body": JSON.stringify({
                 "username": username,
@@ -63,8 +61,6 @@ export function sendReg(email, password, username) {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Headers": "*",
             },
             "body": JSON.stringify({
                 "username": username,

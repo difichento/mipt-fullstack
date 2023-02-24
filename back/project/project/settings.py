@@ -31,7 +31,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_HEADERS = [
     "access-control-allow-origin",
-    "content-type"
+    "content-type",
+    "access-control-allow-headers",
 ]
 
 # Application definition

@@ -29,6 +29,7 @@ export function LiveToQueryAndAnimate() {
     /* animation */
     btn.classList.toggle('live-button-enable')
     btn_circle.classList.toggle('live-button-circle-enable')
+    alert("eqwdsjdnsajcnsjnj")
 }
 
 

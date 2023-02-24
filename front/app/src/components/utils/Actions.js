@@ -37,6 +37,10 @@ export function sendLogin(username, password) {
     fetch(Settings.backendURL + "/auth/login/",
         {
             "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Headers": "access-control-allow-origin",
+            },
             "body": JSON.stringify({
                 "username": username,
                 "password": password,
@@ -56,6 +60,10 @@ export function sendReg(email, password, username) {
     fetch(Settings.backendURL + "/auth/reg/",
         {
             "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Headers": "access-control-allow-origin",
+            },
             "body": JSON.stringify({
                 "username": username,
                 "password": password,

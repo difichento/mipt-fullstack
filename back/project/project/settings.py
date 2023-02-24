@@ -30,7 +30,8 @@ ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOW_HEADERS = [
-    "access-control-allow-origin"
+    "access-control-allow-origin",
+    "content-type"
 ]
 
 # Application definition

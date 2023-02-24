@@ -72,7 +72,6 @@ export function sendReg(email, password, username) {
         })
         .then(response => response.json())
         .then(response => {
-            homeRedirectAction()
             window.alert("Registered: " + email + " + " + password + " + " + username
                 + "\nResponse: " + JSON.stringify(response))
         })

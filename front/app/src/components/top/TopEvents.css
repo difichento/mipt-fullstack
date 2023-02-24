@@ -1,0 +1,129 @@
+.main-container {
+    height: 1300px;
+    background-color: white;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container .container {
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.title-top {
+    color: black;
+    font-size: 34px;
+    font-weight: bold;
+    display: inline;
+    padding-right: 20px;
+}
+
+.is-live {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.live-title {
+    color: #5B5B5B;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.live-button {
+    height: 16px;
+    width: 30px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 25px;
+    position: relative;
+    background: #dfe4ea;
+    margin-left: 10px;
+}
+
+.live-button-enable {
+    background: linear-gradient(0deg, #d42a28, #d42a28);
+}
+
+.live-button-circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 25px;
+    display: inline-block;
+    background: #fff;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    margin: 2px 16px 2px 2px;
+}
+
+.live-button-circle-enable {
+    margin: 2px 2px 2px 16px;
+}
+
+.selector {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px 15px;
+}
+
+.separator {
+    height: 22px;
+    width: 1px;
+    flex-shrink: 0;
+    background: #dfe4ea;
+    margin: 0 20px;
+}
+
+.sportlist {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.sport {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin: 0 10px 0 0;
+    padding: 0 0 0 10px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    cursor: pointer;
+}   
+
+.sport-icon {
+    height: 30px;
+    width: 30px;
+    flex-shrink: 0;
+    display: inline-block;
+    background-size: 30px;
+    vertical-align: middle;
+}
+
+.sport-icon.football {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/black_new/1-football.svg");
+}
+
+.sport-icon.football:hover {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/color_new/1-football.svg");
+}
+
+.sport-icon.football.enabled-sport {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/color_new/1-football.svg");
+}
+
+
+.sport-icon.cybersport {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/black_new/29086_Cyber_Sport.svg");}
+
+.sport-icon.cybersport:hover {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/color_new/29086_Cyber_Sport.svg");}
+
+.sport-icon.cybersport.enabled-sport {
+    background-image: url("https://origin.pb06e2-resources.com/ContentCommon/Logotypes/SportKinds/new-design/color_new/29086_Cyber_Sport.svg");}

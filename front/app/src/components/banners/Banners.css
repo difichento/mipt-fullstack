@@ -1,0 +1,35 @@
+.banner .container {
+    background-color: black;
+    height: 300px;
+}
+
+.banner-content {
+    width: 30%;
+    height: 300px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+
+.banner-btn {
+    color: white;
+    font-size: 25px;
+    background-color: #00C7B0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.banner-btn:hover {
+    background-color: #009483;
+}
+
+.banner-btn:active {
+    background-color: #007A6C;
+}
+
+.banner-text {
+    font-size: 32px;
+    font-weight: 500;
+}

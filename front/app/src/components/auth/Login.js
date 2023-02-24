@@ -14,7 +14,7 @@ function LoginForm() {
         <main className="auth-container">
             <h1>Авторизация</h1>
             <form className="login-form">
-                <input type="email" placeholder="Почта" name="email" value={username} onChange={usernameChange}></input>
+                <input type="username" placeholder="Username" name="username" value={username} onChange={usernameChange}></input>
                 <input type="password" placeholder="Пароль" name="password" onChange={passwordChange}></input>
                 <input type="button" id="sendLog" onClick={() => sendLogin(username, password)} value="Войти"></input>
             </form>

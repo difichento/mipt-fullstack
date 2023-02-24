@@ -39,7 +39,8 @@ export function sendLogin(username, password) {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*",
             },
             "body": JSON.stringify({
                 "username": username,
@@ -52,7 +53,7 @@ export function sendLogin(username, password) {
         })
         .catch((error) => {
             alert(error)
-            console.log("ERROR: " + username + password)
+            console.log("ERROR: " + username + " " + password)
         })
 }
 
@@ -62,7 +63,8 @@ export function sendReg(email, password, username) {
             "method": "POST",
             "headers": {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "*",
             },
             "body": JSON.stringify({
                 "username": username,
@@ -78,6 +80,6 @@ export function sendReg(email, password, username) {
         })
         .catch((error) => {
             alert(error)
-            console.log("ERROR: " + username + password + email)
+            console.log("ERROR: " + username + " " + password + " " + email)
         })
 }

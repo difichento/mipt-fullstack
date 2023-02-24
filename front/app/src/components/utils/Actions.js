@@ -47,7 +47,7 @@ export function sendLogin(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            console.log("LOGIN: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+            alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
             homeRedirectAction()
         })
 }
@@ -67,7 +67,7 @@ export function sendReg(email, password, username) {
         })
         .then(response => response.json())
         .then(response => {
-            console.log("REG: " + email + " + " + password + " + " + username
+            alert("Successfully registered: " + email + " + " + password + " + " + username
                 + "\nResponse: " + JSON.stringify(response))
             homeRedirectAction()
         })

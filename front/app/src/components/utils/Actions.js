@@ -48,7 +48,10 @@ export function sendLogin(username, password) {
         .then(response => response.json())
         .then(response => {
             homeRedirectAction()
-            alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+            setTimeout(() => {
+                alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+            },
+                2000)
         })
         .catch((error) => {
             alert(error)
@@ -71,8 +74,13 @@ export function sendReg(email, password, username) {
         .then(response => response.json())
         .then(response => {
             homeRedirectAction()
-            alert("Successfully registered: " + email + " + " + password + " + " + username
-            + "\nResponse: " + JSON.stringify(response))
+            setTimeout(() => {
+                alert("Successfully registered: " + email + " + " + password + " + " + username
+                    + "\nResponse: " + JSON.stringify(response))
+            },
+                2000
+            )
+
         })
         .catch((error) => {
             alert(error)

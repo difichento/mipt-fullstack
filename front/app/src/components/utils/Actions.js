@@ -47,8 +47,11 @@ export function sendLogin(username, password) {
         })
         .then(response => response.json())
         .then(response => {
-            alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
             homeRedirectAction()
+            alert("Successfully looged in: " + username + " + " + password + "\nResponse: " + JSON.stringify(response))
+        })
+        .catch((error) => {
+            alert(error)
         })
 }
 
@@ -67,8 +70,11 @@ export function sendReg(email, password, username) {
         })
         .then(response => response.json())
         .then(response => {
-            alert("Successfully registered: " + email + " + " + password + " + " + username
-                + "\nResponse: " + JSON.stringify(response))
             homeRedirectAction()
+            alert("Successfully registered: " + email + " + " + password + " + " + username
+            + "\nResponse: " + JSON.stringify(response))
+        })
+        .catch((error) => {
+            alert(error)
         })
 }

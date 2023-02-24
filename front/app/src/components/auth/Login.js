@@ -4,8 +4,8 @@ import { useState } from "react";
 import "./Login.css"
 
 function LoginForm() {
-    const [username, setEmail] = useState("")
-    const usernameChange = (event) => { setEmail(event.target.value); };
+    const [username, setUsername] = useState("")
+    const usernameChange = (event) => { setUsername(event.target.value); };
 
     const [password, setPassword] = useState("")
     const passwordChange = (event) => { setPassword(event.target.value); };

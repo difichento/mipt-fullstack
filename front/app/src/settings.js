@@ -1,5 +1,5 @@
 class Settings {
-    static backendURL = "http://0.0.0.0:8000"
+    static backendURL = "http://51.250.67.237:8000"
 }
 
 export default Settings
